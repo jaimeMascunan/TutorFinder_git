@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_edit_product"
+        android:title="Editar clase"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/gris"/>
+
+    <item
+        android:id="@+id/menu_delete_product"
+        android:title="Eliminar clase"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/gris"/>
+
+</menu>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_inscriure_product"
+        android:title="Inscriure's"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/gris"/>
+
+    <item
+        android:id="@+id/menu_info_owner_product"
+        android:title="Contactar usuari"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/gris"/>
+
+</menu>

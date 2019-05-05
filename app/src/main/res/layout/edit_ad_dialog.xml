@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blanco"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <ImageView
+            android:id="@+id/logo_app"
+            android:src="@drawable/logo_tutor_finder"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/todo" />
+
+        <LinearLayout
+            android:id="@+id/edit_product_capçalera"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/logo_app">
+                <TextView
+                    android:id="@+id/screen_description_edit_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Editar anunci"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center" />
+
+                <ImageView
+                    android:id="@+id/logo_app_edit"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="18dp"
+                    android:contentDescription="@string/todo"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_edit_black_product_24dp" />
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@+id/edit_product_capçalera"
+            android:id="@+id/ad_title_edit_parent">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/ad_title_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"
+                android:singleLine="true"
+                android:textColor="@color/negro" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@+id/ad_title_edit_parent"
+            android:id="@+id/ad_descripcio_edit_parent">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/ad_descripcio_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:maxWidth="10dp"
+                android:maxLines="2"
+                android:imeOptions="actionDone"
+                android:textColor="@color/negro" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:paddingStart="13dp"
+            android:paddingEnd="0dp"
+            android:textSize="12sp"
+            android:text="tipus de curs"
+            android:layout_below="@+id/ad_descripcio_edit_parent"
+            android:id="@+id/ad_label_ad_type_id"/>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/ad_type_spinner_edit"
+            android:layout_below="@+id/ad_label_ad_type_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginLeft="1dp"
+            android:padding="14dp"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:textSize="20sp"
+            android:ellipsize="marquee"
+            android:spinnerMode="dropdown"
+            android:drawSelectorOnTop="true"
+            android:textAlignment="inherit"
+            android:singleLine="true"
+            android:background="@drawable/spinner_dropdown"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:layout_below="@+id/ad_type_spinner_edit">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/ad_price_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@color/negro"/>
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+</ScrollView>

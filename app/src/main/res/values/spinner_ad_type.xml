@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ad_typer_publish">
+        <item></item>
+        <item>Física/Química</item>
+        <item>Idiomes</item>
+        <item>Informàtica</item>
+        <item>Electricitat/Mecànica</item>
+        <item>Dibuix</item>
+        <item>Economía</item>
+        <item>Arts escéniques</item>
+        <item>Mùsica</item>
+    </string-array>
+</resources>

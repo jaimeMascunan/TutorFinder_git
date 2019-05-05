@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    android:fitsSystemWindows="true"
+    tools:context=".AdActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blanco"
+        android:paddingTop="24dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <ImageView android:src="@drawable/logo_tutor_finder"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/todo" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/ad_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Titol del curs que busques"
+                android:inputType="textCapSentences"
+                android:singleLine="true"
+                android:textColor="@color/negro" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/ad_descripcio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Descripcio del curs"
+                android:inputType="textLongMessage"
+                android:lines="4"
+                android:textColor="@color/negro" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:paddingStart="13dp"
+            android:paddingEnd="0dp"
+            android:textSize="12sp"
+            android:text="tipus de curs"/>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/ad_type_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginLeft="1dp"
+            android:padding="14dp"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:textSize="20sp"
+            android:ellipsize="marquee"
+            android:spinnerMode="dropdown"
+            android:drawSelectorOnTop="true"
+            android:textAlignment="inherit"
+            android:singleLine="true"
+            android:background="@drawable/spinner_dropdown"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/ad_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pressupost / Cost per hora"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@color/negro"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/publish_ad"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/button_edit"
+            android:textColor="@color/blanco"
+            android:text="Publicar"/>
+
+    </LinearLayout>
+</ScrollView>

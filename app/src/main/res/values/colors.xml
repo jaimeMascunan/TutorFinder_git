@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blanco">#ffffff</color>
+    <color name="negro">#222222</color>
+    <color name="gris">#999999</color>
+    <color name="azul">#26ae90</color>
+    <color name="gris_claro">#eceef1</color>
+    <color name="magenta">#ff6861</color>
+    <color name="naranja">#FFB825</color>
+    <color name="azul_claro">#0ebea2</color>
+    <color name="azul_oscuro">#1e806d</color>
+    <color name="amarillo">#FFE225</color>
+</resources>

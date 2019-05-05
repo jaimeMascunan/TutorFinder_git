@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Tutor Finder</string>
+    <string name="name">name</string>
+    <string name="password">password</string>
+    <string name="email">email</string>
+    <string name="error_invalid_email">Esta dirección de correo-e es invalida</string>
+    <string name="error_invalid_password">El password introducido es incorrecto</string>
+    <string name="error_field_required">Este campo es obligatorio</string>
+    <string name="error_login">Fallo en el login</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Nombre</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="btn_link_to_register">Sin cuenta aún? Crea una.</string>
+    <string name="btn_link_to_login">Ya estas registrado/a? Haz log in.</string>
+    <string name="sqlite_db_name">tutor_finder_api</string>
+    <string name="error_registration">No se pudo realizar el registro</string>
+    <string name="success_registration">User successfully registered. Try login now!</string>
+    <string name="error_invalid_name">Por lo menos debes introducir 3 caracteres en el nombre</string>
+    <string name="hint_user_type">Rol d\'usuari</string>
+    <string name="user_type">user_type</string>
+    <string name="todo">TODO</string>
+    <string name="logo_description">Logo de la aplicacio</string>
+    <string name="imatge_usuari">imatge usuari</string>
+    <string name="title_activity_edit_use">Edit_use</string>
+</resources>
